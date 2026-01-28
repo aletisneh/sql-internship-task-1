@@ -1,0 +1,20 @@
+-- SQLite does NOT support CREATE DATABASE or USE
+-- Directly create the table
+
+CREATE TABLE students (
+    id INTEGER PRIMARY KEY,
+    name TEXT,
+    email TEXT,
+    age INTEGER
+);
+
+INSERT INTO students (id, name, email, age) VALUES
+(1, 'Rahul Sharma', 'rahul@gmail.com', 21),
+(2, 'Sneha Reddy', 'sneha@gmail.com', 20),
+(3, 'Amit Kumar', 'amit@gmail.com', 22),-
+(4, 'Priya Singh', 'priya@gmail.com', 21),
+(5, 'Arjun Patel', 'arjun@gmail.com', 23);
+
+SELECT * FROM students;
+
+SELECT name, email FROM students;
